@@ -27,6 +27,7 @@ void setup(void) {
   Serial.printf("setup start\n");
 
   tft.begin();
+  tft.setRotation(2); // rotate 180 degrees if needed
   tft.fillScreen(TFT_BLACK);
 
   camera_config_t config;
